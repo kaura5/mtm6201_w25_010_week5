@@ -151,3 +151,69 @@ body{
 .animation .b3:active{
     animation-play-state: paused;
 }
+
+/* @keyframes pushRollMorph {
+    0% {
+      transform: translateX(0) rotate(0deg);
+      border-radius: 0;
+      background-color: palevioletred;
+    }
+    30% {
+      transform: translateX(150px) rotate(180deg);
+      border-radius: 0;
+      background-color: lightseagreen;
+    }
+    60% {
+      transform: translateX(300px) rotate(360deg);
+      border-radius: 0;
+      background-color: mediumorchid;
+    }
+    80% {
+      transform: translateX(350px) rotate(450deg);
+      border-radius: 25%;
+      background-color: gold;
+    }
+    100% {
+      transform: translateX(400px) rotate(540deg);
+      border-radius: 50%;
+      background-color: lightcoral;
+    }
+  }
+  
+  .animation .b4 {
+    animation: pushRollMorph 5s ease-in-out forwards;
+  } */
+
+  @keyframes morphRollBounce {
+    0% {
+      transform: translateX(0) rotate(0deg) scale(1,1);
+      border-radius: 0;
+      background-color: palevioletred;
+    }
+    25% {
+      transform: translateX(150px) rotate(180deg) scale(1.2,0.8);
+      border-radius: 10%;
+      background-color: lightseagreen;
+    }
+    50% {
+      transform: translateX(300px) rotate(360deg) scale(0.9,1.1);
+      border-radius: 25%;
+      background-color: mediumorchid;
+    }
+    75% {
+      transform: translateX(380px) rotate(540deg) scale(1.1,0.9);
+      border-radius: 40%;
+      background-color: gold;
+    }
+    100% {
+      transform: translateX(400px) rotate(720deg) scale(1,1);
+      border-radius: 50%;
+      background-color: lightcoral;
+      box-shadow: 0 0 20px rgba(255, 100, 150, 0.6);
+    }
+  }
+  
+  .animation .b4 {
+    animation: morphRollBounce 6s ease-in-out infinite alternate;
+  }
+  
